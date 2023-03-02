@@ -1,2 +1,2 @@
 # eloadas-demok
-Szoftvertechnikák előadás demók
+Szoftvertechnikák tárgy előadáshoz kapcsolódó demók

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Math\Math.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Crypto">
+      <HintPath>..\Crypto\bin\Debug\net6.0\Crypto.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

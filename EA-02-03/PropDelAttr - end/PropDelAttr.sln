@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31005.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes", "Attributes\Attributes.csproj", "{6ADE24D8-47D8-40D3-8C99-5C6857ACE0CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attributes", "Attributes\Attributes.csproj", "{6ADE24D8-47D8-40D3-8C99-5C6857ACE0CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{701F446A-7201-46B0-BD1E-C141111A7369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{701F446A-7201-46B0-BD1E-C141111A7369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Properties\Properties.csproj", "{AC3CF4D0-2FFE-47DC-8F6B-EAF2B2B9ED86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Properties", "Properties\Properties.csproj", "{AC3CF4D0-2FFE-47DC-8F6B-EAF2B2B9ED86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Misc", "Misc\Misc.csproj", "{65F90FD3-201B-4B60-8E12-4EB632D58614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{AC3CF4D0-2FFE-47DC-8F6B-EAF2B2B9ED86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC3CF4D0-2FFE-47DC-8F6B-EAF2B2B9ED86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC3CF4D0-2FFE-47DC-8F6B-EAF2B2B9ED86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F90FD3-201B-4B60-8E12-4EB632D58614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F90FD3-201B-4B60-8E12-4EB632D58614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F90FD3-201B-4B60-8E12-4EB632D58614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F90FD3-201B-4B60-8E12-4EB632D58614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

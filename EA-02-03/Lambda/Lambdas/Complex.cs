@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace Lambdas;
 
-namespace Lambdas
+class Complex
 {
-    class Complex
-    {
-        public double Re, Im;
+    public double Re, Im;
 
-        public Complex(double re, double im)
-        {
-            this.Re = re;
-            this.Im = im;
-        }
+    public Complex(double re, double im)
+    {
+        this.Re = re;
+        this.Im = im;
     }
 }

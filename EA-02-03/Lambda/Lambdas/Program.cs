@@ -33,6 +33,14 @@ class Program
 
         #region UTASÍTÁS/STATEMENT lambda változat definiálása és eltárolása egy lokális változóban
 
+        // A fis0 lokális változót a FirstIsSmaller_Complex "klasszikus", névvel rendelkező
+        // függvényre állítjuk. Eddig erre láttunk példákat.
+        FirstIsSmallerDelegate fis0 = FirstIsSmaller_Complex;
+
+        // De nem mindig akarunk egy függvényt bevezetni ilyen esetben.
+        // A következő lépésben egy hasonló lokális változót egy név nélküli, helyben definiált,
+        // lambda kifejezés formájában adott "függvényre" állítjuk.
+
         // A utasítás/statement lambda változat esetében {} között akárhány utasítás állhat:
         // ez az általános szintaktika: (input-parameters) => { <sequence-of-statements> }
         // A gyakorlatban 2-4 sornál hosszabbat ritkán szoktunk.
@@ -40,6 +48,7 @@ class Program
         // A lambda kifejezés paraméterei az a és a b, a törzse a => után található.
         // Ez egy névtelen függvény, így hogy használni tudjuk, eltároltuk egy
         // delegate változóban egy hivatkozást rá.
+
         FirstIsSmallerDelegate fis1 = (object a, object b) =>
             {
                 Complex ca = (Complex)a;

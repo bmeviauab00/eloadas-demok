@@ -8,15 +8,15 @@ namespace HelloApp
         {
             Console.WriteLine("Hello world!");
 
-            // #1 Projekt referencia
+            // #1 Project reference
             // int sum = Math.BasicMath.Add(10, 20);
             // Console.WriteLine($"Sum: {sum}");
 
-            // #2 Szerelvény referencia
+            // #2 Assembly reference
             //string encryptedText = Crypto.Encryptor.Encrypt("alma");
             //Console.WriteLine($"encryptedText: {encryptedText}");
 
-            // #3 NuGet használata
+            // #3 Use of NuGet
             // https://joshclose.github.io/CsvHelper/getting-started/
             // Install-Package CsvHelper
             //using (var reader = new StreamReader(@"..\..\..\data\SampleFile.txt"))

@@ -8,7 +8,7 @@ namespace HelloApp
 {
     public class Person
     {
-        // Ezek property-k (tulajdonságok), következő órán vesszük.
+        // Some properties (covered on upcoming lecture)
         public int Id { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }

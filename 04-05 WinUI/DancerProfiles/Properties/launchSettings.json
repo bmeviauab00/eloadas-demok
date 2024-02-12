@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DancerProfiles (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DancerProfiles (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

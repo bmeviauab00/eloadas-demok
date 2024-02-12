@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ComposabilitySample (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ComposabilitySample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

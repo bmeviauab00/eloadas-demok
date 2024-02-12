@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="XAMLsample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:ui="using:CommunityToolkit.WinUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+	<Button
+	Content="OK" 
+	Click="Button_Click"/>
+	
+	<!-- v1 -->
+	<!--<Border Background="DeepSkyBlue" 
+			Height="50" Width="50" CornerRadius="5">
+		<TextBlock Text="🌤️" 
+				   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	</Border>-->
+
+	<!-- v2 -->
+
+	<!--<Grid Height="150" Width="150">
+		<Border Background="DeepSkyBlue" CornerRadius="30" Padding="15">
+			<TextBlock Text="🌤️" 
+					   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		</Border>
+		<Border Background="LightGray" Opacity="0.7" 
+				CornerRadius="10" Padding="10"
+				HorizontalAlignment="Right" VerticalAlignment="Top" >
+			<TextBlock FontSize="18" Text="80%"/>
+		</Border>
+	</Grid>-->
+
+
+	<!-- v3 -->
+
+	<!--<Grid Height="150" Width="150">
+		<Border Background="DeepSkyBlue" CornerRadius="30" Padding="15">
+			<Viewbox>
+				<TextBlock Text="🌤️"/>
+			</Viewbox>
+		</Border>
+		<Border Background="LightGray" Opacity="0.7" CornerRadius="10" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="10" >
+			<Border.RenderTransform>
+				<TranslateTransform X="10" Y="-10" />
+			</Border.RenderTransform>
+			<TextBlock FontSize="18" Text="80%"/>
+		</Border>
+	</Grid>-->
+
+
+	<!-- v4 -->
+
+	
+	<!--<Grid Height="150" Width="150">
+		<Border x:Name="shadowTarget" Background="DeepSkyBlue" CornerRadius="30" Padding="15">
+			<Viewbox>
+				<TextBlock Text="🌤️"/>
+			</Viewbox>
+		</Border>
+		<Border Background="LightGray" Opacity="0.7" CornerRadius="10" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="10" >
+			<Border.RenderTransform>
+				<TranslateTransform X="10" Y="-10" />
+			</Border.RenderTransform>
+			<ui:Effects.Shadow>
+				<ui:AttachedDropShadow CastTo="{x:Bind shadowTarget}" BlurRadius="80"/>
+			</ui:Effects.Shadow>
+			<TextBlock FontSize="18" Text="80%"/>
+		</Border>
+	</Grid>-->
+
+</Window>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DataBindingSample (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DataBindingSample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

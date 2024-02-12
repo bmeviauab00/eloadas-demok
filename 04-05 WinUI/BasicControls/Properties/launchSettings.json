@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BasicControls (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BasicControls (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

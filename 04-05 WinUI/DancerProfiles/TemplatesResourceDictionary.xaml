@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary
+    x:Class="DancerProfiles.TemplatesResourceDictionary"	
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DancerProfiles">
+	<DataTemplate x:Key="DancerTemplate" x:DataType="local:Dancer">
+		
+		<StackPanel Orientation="Horizontal">
+			<Image Source="{x:Bind ProfilePicture}" Height="70" />
+			<TextBlock Padding="10 5" MaxHeight="70" Width="150">
+						<Run FontWeight="Bold" Text="{x:Bind Name}" />
+						<LineBreak/>
+						<Run Text="{x:Bind Role}" />
+						<LineBreak/>
+				
+						<Run x:Uid="txtPoints" />				
+						<Run Text="{x:Bind Points}" />
+				
+			</TextBlock>
+		</StackPanel>
+	</DataTemplate>
+
+</ResourceDictionary>

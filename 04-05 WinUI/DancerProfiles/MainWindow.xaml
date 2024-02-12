@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="DancerProfiles.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DancerProfiles"
+    xmlns:strict="using:DancerProfiles.StrictMVVM"
+    xmlns:relaxed="using:DancerProfiles.RelaxedMVVM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+	<!--<relaxed:RelaxedPage/>-->
+	
+	<!--<strict:StrictPage />-->
+
+	<!--<ListView ItemsSource="{x:Bind Dancers}" 
+			  ItemTemplate="{StaticResource DancerTemplate}" />-->
+
+	<!--<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+		<ContentControl Content="{x:Bind Dancers[0]}" 
+						ContentTemplate="{StaticResource DancerTemplate}" />
+		<ContentControl Content="{x:Bind Dancers[1]}" 
+						ContentTemplate="{StaticResource DancerTemplate}" />
+		
+	</StackPanel>-->
+</Window>

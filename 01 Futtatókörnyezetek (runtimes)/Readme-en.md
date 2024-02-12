@@ -16,7 +16,7 @@ In the HelloApp project, make a project reference to the Math project. We can no
 
 ## Demo 2 - assembly reference
 
-Assume that we don't have the source code for the Crypto library, we only have the Math library in compiled form (e.g. from an external company), so we only have Crypto.dll. In this case, an assembly reference should be added (to Crypto.dll). Remove the Crypto project from the solution (simulating that it does not have its source), put the assembly reference to Crypto.dll (located in the output folder of the project). Let's try to make sure we can actually use the code in it (this is done by activating the code under "#2" in the Main function).
+Assume that we don't have the source code for the Crypto library, we only have the Crypto library in compiled form (e.g. from an external company), so we only have Crypto.dll. In this case, an assembly reference should be added (to Crypto.dll). Remove the Crypto project from the solution (simulating that it does not have its source), put the assembly reference to Crypto.dll (located in the output folder of the project). Let's try to make sure we can actually use the code in it (this is done by activating the code under "#2" in the Main function).
 
 ## Demo 3 - NuGet packages
 

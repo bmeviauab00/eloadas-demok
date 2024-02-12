@@ -16,7 +16,7 @@ A HelloApp projektben tegyünk projekt referenciát a Math projektre. Most már 
 
 ## Demo 2 - szerelvény referencia
 
-Feltesszük, hogy nincs meg a Crypto könyvtár forráskódja, csak lefordított formában kapjuk meg (pl. külső cégtől) meg a Math könyvtárat, vagyis csak a Crypto.dll áll rendelkezésünkre. Ez esetben szerelvény referenciát kell rá tenni. Távolítsuk el a Crypto projektet a solution-ből (azt szimulálva, hogy nincs meg a forrása), tegyünk szerelvény referenciát a Crypto.dll-re (a projekt kimeneti mappájában található). Próbáljuk ki, hogy valóban tudjuk a benne levő kódot használni (ehhez a Main függvényben "#2" alatti kód élesítése).
+Feltesszük, hogy nincs meg a Crypto könyvtár forráskódja, csak lefordított formában kapjuk meg (pl. külső cégtől) meg a Crypto könyvtárat, vagyis csak a Crypto.dll áll rendelkezésünkre. Ez esetben szerelvény referenciát kell rá tenni. Távolítsuk el a Crypto projektet a solution-ből (azt szimulálva, hogy nincs meg a forrása), tegyünk szerelvény referenciát a Crypto.dll-re (a projekt kimeneti mappájában található). Próbáljuk ki, hogy valóban tudjuk a benne levő kódot használni (ehhez a Main függvényben "#2" alatti kód élesítése).
 
 ## Demo 3 - NuGet csomagok
 

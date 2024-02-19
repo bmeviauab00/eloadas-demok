@@ -16,7 +16,7 @@ namespace Properties
             set
             {
                 if (value == null)
-                    throw new ArgumentNullException("The Name prop. can not be null.");
+                    throw new ArgumentNullException(nameof(Name));
                 name = value;
             }
         }
@@ -41,7 +41,7 @@ namespace Properties
         // Számított érték
         public int Age
         {
-            get 
+            get
             {
                 return DateTime.Now.Year - yearOfBirth;
             }

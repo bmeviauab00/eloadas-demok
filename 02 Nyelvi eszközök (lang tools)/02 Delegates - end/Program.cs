@@ -45,7 +45,7 @@ namespace Delegates
             list.Add(new Complex(1, 2));
 
             // Sorter.HyperSort(list, new FirstIsSmallerDelegate(FirstIsSmaller_Complex));
-            
+
             Sorter.HyperSort(list, FirstIsSmaller_Complex );
 
             ComplexComparer complexComparer = new ComplexComparer();

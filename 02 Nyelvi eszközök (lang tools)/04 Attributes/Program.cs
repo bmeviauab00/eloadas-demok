@@ -14,9 +14,17 @@ namespace Attributes
         [NonSerialized]
         string password;
 
+        [Obsolete("This method is obsolete. Call DeleteUser2 instead.", false)]
         public static void DeleteUser(int userId)
         {
+            // ...
         }
+
+        public static void DeleteUser2(int userId)
+        {
+            // ...
+        }
+
 
         public User(string name, int age, string password)
         {
@@ -45,6 +53,9 @@ namespace Attributes
             FileStream stream2 = new FileStream("Dump.dat", FileMode.Open);
             User u = (User)formatter.Deserialize(stream2);
             stream2.Close();
+
+            // Warning a build során, mert Obsolete-nek jeöltük a függvényt
+            User.DeleteUser(12);
         }
     }
 }

@@ -32,3 +32,14 @@ public class Stack<T>
         return items[current--];
     }
 }
+
+class Program2
+{
+    static void Main2(string[] args)
+    {
+        Stack<int> intsstack = new Stack<int>();
+        intsstack.Push(1);
+        // intsstack.Push("ss"); // would result in a compilation error
+        int i = intsstack.Pop();
+    }
+}

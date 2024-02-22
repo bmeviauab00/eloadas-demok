@@ -33,3 +33,14 @@ public class Stack
 			throw new InvalidOperationException("The stack is empty.");
 	}
 }
+
+class Program1
+{
+	static void Main(string[] args)
+	{
+		Stack objectStack = new Stack();
+		objectStack.Push(1);
+		objectStack.Push("sss");
+		int x = (int)objectStack.Pop();
+	}
+}

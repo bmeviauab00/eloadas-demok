@@ -8,13 +8,14 @@ var fruits2 = fruits.Where(f => f.Length <= 5);
 foreach (var f in fruits2)
     Console.WriteLine(f);
 
+Console.WriteLine();
 
-var fuits3 = fruits
-    .Where(f => f.Length <= 5)  // Filtering
-    .OrderBy(f => f.Length)     // Sorting
-    .Select(f => $"Reverse: {f.Reverse()}, Length: {f.Length}") // Projection
+var fruits3 = fruits
+    .Where(f => f.Length <= 6)  // Filtering
+    .Select(f => $"Uppercase: {f.ToUpper()}, Length: {f.Length}") // Projection
     .ToList();
-
+foreach (var f in fruits3)
+    Console.WriteLine(f);
 
 // ToList creates a new List from the IEnumerable<string>
 var fuits4 = fruits.Where(f => f.Length <= 5).ToList();

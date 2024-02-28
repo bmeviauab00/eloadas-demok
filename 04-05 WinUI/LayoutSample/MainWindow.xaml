@@ -49,7 +49,9 @@
 		</Grid.Resources>
 
 		<StackPanel Orientation="Vertical" Spacing="6">
+			
 			<Rectangle Style="{StaticResource rect1}" />
+			
 			<Rectangle Style="{StaticResource rect2}" />			
 			<Rectangle Style="{StaticResource rect3}" />
 			<Rectangle Style="{StaticResource rect4}" />

@@ -38,6 +38,7 @@
 		
 		<!--<TextBox	Grid.Row="0" Grid.Column="1" Text="{x:Bind Dancer.Name, TargetNullValue=' - Unknown - ', FallbackValue='Loading...', Mode=TwoWay}" Margin="10" />-->
 		<!--<TextBox	Grid.Row="0" Grid.Column="1" Text="{x:Bind Dancer.Name, UpdateSourceTrigger=PropertyChanged, TargetNullValue=' - Unknown - ', FallbackValue='Loading...', Mode=TwoWay}" Margin="10" />-->
+		
 		<TextBox	Grid.Row="0" Grid.Column="1" Text="{x:Bind Dancer.Name, TargetNullValue=' - Unknown - ', FallbackValue='Loading...', Mode=TwoWay}" Margin="10" />
 
 		<ComboBox	Grid.Row="1" Grid.Column="1" ItemsSource="{x:Bind DanceStyles}" 
@@ -55,18 +56,17 @@
 		
 		<StackPanel	Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="20" 
 					Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15">
-
 			<Button IsEnabled="{x:Bind Dancer.Name, Mode=OneWay, 
 					Converter={StaticResource IsEmptyConverter}}">OK</Button>
+			<Button>Cancel</Button>
+		</StackPanel>
 
-			<!--<Button IsEnabled="{x:Bind IsStringNotEmpty(Dancer.Name), Mode=OneWay}">OK</Button>-->
+		<!--<Button IsEnabled="{x:Bind IsStringNotEmpty(Dancer.Name), Mode=OneWay}">OK</Button>-->
 
 			<!--<Button Visibility="{x:Bind ((Visibility)IsValid), Mode=OneWay}">OK</Button>-->
 
 			<!--<Button Click="Button_Click">OK</Button>-->
 
-			<Button>Cancel</Button>
-		</StackPanel>
 
 	</Grid>
 </UserControl>

@@ -15,7 +15,7 @@ namespace UtilizeCPU
             // Process on a single thread
             // - Does not utilize multiple cpu cores. One thread can utilize one CPU core at a time.
             var sw = Stopwatch.StartNew();
-            Process(new Range(0, 8_000_000_000));
+            Process(new Range(0, 16_000_000_000));
             sw.Stop();
             Console.WriteLine($"Done. Duration: {sw.Elapsed}");
         }
@@ -31,28 +31,28 @@ namespace UtilizeCPU
             var sw = Stopwatch.StartNew();
 
             var t1 = new Thread(Process);
-            t1.Start(new Range(0, 1_000_000_000));
+            t1.Start(new Range(0, 2_000_000_000));
 
             var t2 = new Thread(Process);
-            t2.Start(new Range(1_000_000_000, 2_000_000_000));
+            t2.Start(new Range(2_000_000_000, 4_000_000_000));
 
             var t3 = new Thread(Process);
-            t3.Start(new Range(2_000_000_001, 3_000_000_000));
+            t3.Start(new Range(4_000_000_001, 6_000_000_000));
 
             var t4 = new Thread(Process);
-            t4.Start(new Range(3_000_000_001, 4_000_000_000));
+            t4.Start(new Range(6_000_000_001, 8_000_000_000));
 
             var t5 = new Thread(Process);
-            t5.Start(new Range(4_000_000_001, 5_000_000_000));
+            t5.Start(new Range(8_000_000_001, 10_000_000_000));
 
             var t6 = new Thread(Process);
-            t6.Start(new Range(5_000_000_001, 6_000_000_000));
+            t6.Start(new Range(10_000_000_001, 12_000_000_000));
 
             var t7 = new Thread(Process);
-            t7.Start(new Range(6_000_000_001, 7_000_000_000));
+            t7.Start(new Range(12_000_000_001, 14_000_000_000));
 
             var t8 = new Thread(Process);
-            t8.Start(new Range(7_000_000_001, 8_000_000_000));
+            t8.Start(new Range(14_000_000_001, 16_000_000_000));
 
             // Wait for all threads to finish
             t1.Join();

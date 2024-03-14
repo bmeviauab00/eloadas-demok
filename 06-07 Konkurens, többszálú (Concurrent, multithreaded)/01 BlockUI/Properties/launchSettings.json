@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BlockUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BlockUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

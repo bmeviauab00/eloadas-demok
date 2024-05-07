@@ -4,6 +4,8 @@ namespace AdoNet;
 
 internal class Program
 {
+    const string ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SzoftechDB;Integrated Security=True;TrustServerCertificate=true";
+
     static void Main(string[] args)
     {
         TermekLista();
@@ -33,7 +35,7 @@ internal class Program
         try
         {
             // Kapcsolat objektum létrehozása
-            conn = new SqlConnection("Data Source=.\\MSSQ2019;Initial Catalog=SzoftechDB;Integrated Security=True;TrustServerCertificate=true");
+            conn = new SqlConnection(ConnectionString);
 
             // Az adatbázis parancs létrehozása
             // Így nem szabad, SQL injection !!!!
@@ -78,7 +80,7 @@ internal class Program
         try
         {
             // Kapcsolódás azadatbázishoz
-            conn = new SqlConnection("Data Source=.\\MSSQ2019;Initial Catalog=SzoftechDB;Integrated Security=True;TrustServerCertificate=true");
+            conn = new SqlConnection(ConnectionString);
 
             // A kapcsolat megnyitása
             conn.Open();

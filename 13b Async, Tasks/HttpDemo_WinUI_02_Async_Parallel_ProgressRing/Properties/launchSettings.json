@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HttpDemo_WinUI_01_Sync (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "HttpDemo_WinUI_01_Sync (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

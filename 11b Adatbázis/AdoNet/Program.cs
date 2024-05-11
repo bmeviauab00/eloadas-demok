@@ -4,7 +4,7 @@ namespace AdoNet;
 
 internal class Program
 {
-    const string ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SzoftechDB;Integrated Security=True;TrustServerCertificate=true";
+    const string ConnectionString = @"Data Source=BZLAPTOP\MSSQ2019;Initial Catalog=SzoftechDB;Integrated Security=True;TrustServerCertificate=true";
 
     static void Main(string[] args)
     {

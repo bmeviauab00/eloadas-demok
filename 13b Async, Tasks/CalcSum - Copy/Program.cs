@@ -15,7 +15,14 @@
             Console.WriteLine($"Sum: {res}");
         }
 
-
+        static long CalculateSumOfRands(long count, int max)
+        {
+            Random r = new Random();
+            long sum = 0;
+            for (long i = 0; i <= count; i++)
+                sum += r.Next(max + 1); ;
+            return sum;
+        }
 
         // A Task.Run a paraméterében kapott függvényt beteszi egy threadpool "sorba"
         // és visszaad egy Task-ot, mely ezt a feladatot reprezentálja. Nem várja meg,

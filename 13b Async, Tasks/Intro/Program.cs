@@ -17,7 +17,7 @@ namespace Intro
 
             // Console.WriteLine(Rands.GetLongestLine("Data.txt"));
 
-            Console.WriteLine($"Longest line length: {Rands.GetLongestLineLengthAsync("Data.txt").Result}");
+            Console.WriteLine($"Longest line length: {FileStatistics.GetLongestLineLengthAsync("Data.txt").Result}");
 
             // Let's make Main async and use await here as well instead of ".Result"!  (static async Task Main(string[] args))
         }

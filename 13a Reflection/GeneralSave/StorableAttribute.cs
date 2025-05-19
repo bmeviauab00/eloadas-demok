@@ -1,39 +1,41 @@
-
 namespace Storage;
 
 /// <summary>
-/// Attribute to denote Saveable fields
+/// Attribute to denote savable fields
 /// </summary>
-///
 [AttributeUsage(AttributeTargets.Field)]
 public class StorableAttribute : System.Attribute
 {
-    string name;
-    // El kell-e mentenünk a típust is
-    bool saveType;
+    private readonly string name;
+    private bool saveType;
 
-
+    /// <summary>
+    /// Initializes a new instance of the <see cref="StorableAttribute"/> class.
+    /// </summary>
+    /// <param name="name">The name used for storage identification.</param>
     public StorableAttribute(string name)
     {
         this.name = name;
         saveType = false;
-
     }
 
-    public string Name
-    {
-        get { return name; }
-    }
+    /// <summary>
+    /// Gets the name used for storage identification.
+    /// </summary>
+    public string Name => name;
 
+    /// <summary>
+    /// Gets or sets a value indicating whether the type information should be saved.
+    /// </summary>
     public bool SaveType
     {
-        get { return saveType; }
-        set { saveType = value; }
+        get => saveType;
+        set => saveType = value;
     }
 
-    override public string ToString()
-    {
-        return  String.Format($"Name: {{0}}; SaveType: {{1}}", name, saveType.ToString());
-    }
-
+    /// <summary>
+    /// Returns a string representation of the attribute.
+    /// </summary>
+    /// <returns>A string containing the attribute properties.</returns>
+    public override string ToString() => $"Name: {name}; SaveType: {saveType}";
 }

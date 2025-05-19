@@ -10,7 +10,7 @@ class SaveUtils
     {
         Type type = o.GetType();
 
-        // Ha nincs StorableClassAttribute, akkor hibát adunk
+        // Save is to be called with object of classes that have StorableClassAttribute (so missing attribute is an error)
         object[] attributes =
             type.GetCustomAttributes(Type.GetType("Storage.StorableClassAttribute"), false);
 
@@ -28,8 +28,7 @@ class SaveUtils
                 continue;
             StorableAttribute attr = (StorableAttribute)fieldAttributes[0];
 
-            // Ebben a demóban nem mentünk, helyette kiírjuk a konzolra
-            // a mentéshez szükséges paramétereket.
+            // As this is just a simplistic demo: do not perform the save, just display data on the console
             if (attr.SaveType == true)
                 Console.WriteLine($"Type: {fi.FieldType}");
             Console.WriteLine($"Name: {attr.Name}");
@@ -37,8 +36,8 @@ class SaveUtils
         }
     }
 
-    // Kiszûri azokat, akiknek nem StorableClass az osztályuk,
-    // de
+    // Performs validation: prints out a warning for those classes which have members with StorableAttribute, but the
+    // class is not marked with the StorableClassAttribute attribute.
     public static void CheckAssembly(Assembly assembly)
     {
         Type[] types = assembly.GetTypes();
